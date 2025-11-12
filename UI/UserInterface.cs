@@ -340,8 +340,10 @@ namespace HabitTracker.UI
             table.AddColumn(new TableColumn("[bold yellow]Total[/]").LeftAligned());
             table.AddColumn(new TableColumn("[bold yellow]Daily average[/]").LeftAligned());
             table.AddColumn(new TableColumn("[bold yellow]Tracked days[/]").LeftAligned());
-            table.AddColumn(new TableColumn("[bold lime]Best day[/]").RightAligned());
-            table.AddColumn(new TableColumn("[bold red]Worst day[/]").RightAligned());
+            table.AddColumn(new TableColumn("[bold lime]Best day mark[/]").RightAligned());
+            table.AddColumn(new TableColumn("[bold lime]Best day date[/]").RightAligned());
+            table.AddColumn(new TableColumn("[bold red]Worst day mark[/]").RightAligned());
+            table.AddColumn(new TableColumn("[bold red]Worst day date[/]").RightAligned());
 
             foreach (var stat in analytics.HabitStats)
             {
@@ -350,8 +352,10 @@ namespace HabitTracker.UI
                     $"{stat.TotalQuantity} ({stat.Habit.Unit})",
                     $"{stat.AveragePerDay}",
                     $"{stat.DaysTracked}",
-                    $"{stat.BestDayQuantity} {stat.Habit.Unit} ({stat.BestDayDate})",
-                    $"{stat.WorstDayQuantity} {stat.Habit.Unit} ({stat.WorstDayDate})"
+                    $"{stat.BestDayQuantity} {stat.Habit.Unit}",
+                    $"{stat.BestDayDate}",
+                    $"{stat.WorstDayQuantity} {stat.Habit.Unit}",
+                    $"{stat.WorstDayDate}"
                 );
             }
 

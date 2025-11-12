@@ -9,7 +9,7 @@ using static HabitTracker.Database.HabitTrackerDatabase;
 
 namespace HabitTracker
 {
-    internal class Analytics
+    internal static class Analytics
     {
 
         internal static AnalyticsResult GetHabitAnalytics(DateTime startDate, DateTime endDate, List<Habit> habits)
