@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Text.RegularExpressions;
-using HabitTracker.Database;
+﻿using HabitTracker.Database;
 using HabitTracker.Models;
 using Spectre.Console;
 using static HabitTracker.Database.HabitTrackerDatabase;
@@ -288,7 +285,7 @@ namespace HabitTracker.UI
 
                 Console.Clear();
                 DisplayRule($"Resume of day {date:dd-MM-yyyy}");
-                AnsiConsole.WriteLine("");
+                AnsiConsole.WriteLine(string.Empty);
 
                 DisplayBarChart(habitSelectionList, habitEntriesResult);
 

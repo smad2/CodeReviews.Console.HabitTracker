@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HabitTracker.Models
+﻿namespace HabitTracker.Models
 {
     internal class Habit
     {
@@ -19,10 +13,7 @@ namespace HabitTracker.Models
 
         internal int TotalEntries { get; set; }
 
-        internal Habit()
-        {
-
-        }
+        internal Habit() { }
 
         internal Habit(string name, string unit, DateTime creationDate)
         {
@@ -30,6 +21,5 @@ namespace HabitTracker.Models
             Unit = unit;
             CreationDate = creationDate;
         }
-
     }
 }

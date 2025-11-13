@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlTypes;
-using System.Linq;
+﻿using System.Data;
 using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 using HabitTracker.Models;
 using Microsoft.Data.Sqlite;
 

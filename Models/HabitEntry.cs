@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HabitTracker.Models
+﻿namespace HabitTracker.Models
 {
     internal class HabitEntry
     {
-
         internal int Id { get; set; }
 
         internal int HabitId { get; set; }
@@ -19,10 +12,7 @@ namespace HabitTracker.Models
 
         internal string DisplayDate => Date.ToString("yyyy-MM-dd");
 
-        internal HabitEntry()
-        {
-
-        }
+        internal HabitEntry() { }
 
         internal HabitEntry(Habit habit, DateTime dateTime)
         {
@@ -36,6 +26,5 @@ namespace HabitTracker.Models
             Quantity = quantity;
             Date = dateTime;
         }
-
     }
 }

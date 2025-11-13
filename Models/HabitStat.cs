@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HabitTracker.Models
+﻿namespace HabitTracker.Models
 {
     internal class HabitStat
     {
@@ -12,7 +6,6 @@ namespace HabitTracker.Models
         internal int TotalEntries { get; set; }
         internal decimal TotalQuantity { get; set; }
         internal decimal AveragePerDay { get; set; }
-        internal decimal AveragePerEntry { get; set; }
         internal int DaysTracked { get; set; }
         internal decimal ConsistencyRate { get; set; }
         internal decimal BestDayQuantity { get; set; }

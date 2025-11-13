@@ -1,8 +1,5 @@
-﻿using System;
-using System.ComponentModel;
-using System.Linq;
+﻿using System.ComponentModel;
 using System.Text.RegularExpressions;
-using HabitTracker.Database;
 using HabitTracker.Models;
 using Spectre.Console;
 using static HabitTracker.Database.HabitTrackerDatabase;
