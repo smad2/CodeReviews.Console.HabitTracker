@@ -226,7 +226,6 @@ namespace HabitTracker.UI
                 Console.Clear();
                 DisplayRule("Total habit entries");
                 AnsiConsole.WriteLine();
-                var habits = GetAllHabits();
                 var habitEntriesCount = GetAllHabitEntries();
 
                 DisplayEntriesCountBarChart(habitEntriesCount);

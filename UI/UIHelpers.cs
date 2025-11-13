@@ -380,7 +380,6 @@ namespace HabitTracker.UI
         {
             var barChart = new BarChart().Width(70);
 
-            var random = new Random();
             int colorCount = 0;
 
             foreach (var entry in habitEntries)
@@ -404,7 +403,6 @@ namespace HabitTracker.UI
         {
             var barChart = new BarChart().Width(70);
 
-            var random = new Random();
             int colorCount = 0;
 
             foreach (var habitEntryCount in habitEntriesCount)

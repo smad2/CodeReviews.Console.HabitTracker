@@ -6,7 +6,7 @@ namespace HabitTracker.Database
 {
     internal class SeedData
     {
-        public void initDatabase()
+        public void InitDatabase()
         {
             CreateTables();
             InsertSeedHabits();
@@ -20,7 +20,7 @@ namespace HabitTracker.Database
                 connection.Open();
                 var createHabitsTable = connection.CreateCommand();
                 createHabitsTable.CommandText =
-                    @"CREATE TABLE IF NOT EXISTS habits(
+                    @$"CREATE TABLE IF NOT EXISTS {habitsTableName}(
                     Id INTEGER PRIMARY KEY AUTOINCREMENT,
                     Name TEXT,
                     CreationDate TEXT,
@@ -30,7 +30,7 @@ namespace HabitTracker.Database
 
                 var createEntriesTable = connection.CreateCommand();
                 createEntriesTable.CommandText =
-                    @"CREATE TABLE IF NOT EXISTS habit_entries(
+                    @$"CREATE TABLE IF NOT EXISTS {habitsEntriesTableName}(
                     Id INTEGER PRIMARY KEY AUTOINCREMENT,
                     HabitId INTEGER NOT NULL,
                     Quantity DECIMAL (10,2),

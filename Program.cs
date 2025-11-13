@@ -2,7 +2,7 @@
 using HabitTracker.UI;
 
 SeedData seedData = new();
-seedData.initDatabase();
+seedData.InitDatabase();
 
 UserInterface ui = new UserInterface();
 ui.MainMenu();

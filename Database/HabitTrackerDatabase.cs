@@ -1,5 +1,4 @@
 ﻿using System.Data;
-using System.Text;
 using HabitTracker.Models;
 using Microsoft.Data.Sqlite;
 
